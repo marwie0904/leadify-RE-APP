@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BANT Config Direct Test</title>
+</head>
+<body>
+  <h1>BANT Configuration Direct Test</h1>
+  <button onclick="testBANTConfig()">Test BANT Config API</button>
+  <pre id="output"></pre>
+
+  <script>
+    async function testBANTConfig() {
+      const output = document.getElementById('output');
+      output.textContent = 'Testing...\n';
+      
+      try {
+        // Get auth token from localStorage
+        const authData = localStorage.getItem('supabase.auth.token');
+        if (!authData) {
+          output.textContent += 'Error: No auth token found in localStorage\n';
+          return;
+        }
+        
+        const parsed = JSON.parse(authData);
+        const token = parsed?.currentSession?.access_token;
+        if (!token) {
+          output.textContent += 'Error: No access token in session\n';
+          return;
+        }
+        
+        output.textContent += `Token found: ${token.substring(0, 20)}...\n\n`;
+        
+        // Test the BANT config endpoint
+        const agentId = '67b50e8a-4160-41a9-a1b4-1ddc1b14b547';
+        const url = `http://localhost:3001/api/agents/${agentId}/bant-config`;
+        
+        output.textContent += `Testing: GET ${url}\n`;
+        
+        const response = await fetch(url, {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          }
+        });
+        
+        output.textContent += `Response Status: ${response.status} ${response.statusText}\n`;
+        output.textContent += `Content-Type: ${response.headers.get('content-type')}\n\n`;
+        
+        const text = await response.text();
+        output.textContent += 'Response Body:\n';
+        
+        try {
+          const json = JSON.parse(text);
+          output.textContent += JSON.stringify(json, null, 2);
+        } catch (e) {
+          output.textContent += text;
+        }
+        
+        // If 404, it might be normal (no config exists)
+        if (response.status === 404) {
+          output.textContent += '\n\n✅ This is normal if no BANT config exists for this agent yet.';
+        }
+        
+      } catch (error) {
+        output.textContent += `\nError: ${error.message}\n${error.stack}`;
+      }
+    }
+    
+    // Auto-run on page load if already logged in
+    window.addEventListener('load', () => {
+      const authData = localStorage.getItem('supabase.auth.token');
+      if (authData) {
+        testBANTConfig();
+      }
+    });
+  </script>
+</body>
+</html>

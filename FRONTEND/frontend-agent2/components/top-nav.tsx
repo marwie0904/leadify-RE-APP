@@ -1,0 +1,86 @@
+"use client"
+
+import { ThemeToggle } from "./mode-toggle"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { useAuth } from "@/contexts/auth-context"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
+import React from "react"
+
+export function TopNav() {
+  const pathname = usePathname()
+  const pathSegments = pathname.split("/").filter(Boolean)
+  const { user, signOut } = useAuth()
+
+  const handleSignOut = async () => {
+    try {
+      await signOut()
+    } catch (error) {
+      console.error("Failed to sign out:", error)
+    }
+  }
+
+  return (
+    <header className="sticky top-0 z-40 border-b bg-background">
+      <div className="container flex h-16 items-center justify-between px-4 md:px-6">
+        <div className="hidden md:block">
+          <nav className="flex items-center space-x-2">
+            <Link href="/dashboard" className="text-sm font-medium">
+              Home
+            </Link>
+            {pathSegments.map((segment, index) => (
+              <React.Fragment key={segment}>
+                <span className="text-muted-foreground">/</span>
+                <Link href={`/${pathSegments.slice(0, index + 1).join("/")}`} className="text-sm font-medium">
+                  {segment.charAt(0).toUpperCase() + segment.slice(1)}
+                </Link>
+              </React.Fragment>
+            ))}
+          </nav>
+        </div>
+        <div className="flex items-center gap-4">
+          <ThemeToggle />
+          {user && (
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" className="relative h-8 w-8 rounded-full">
+                  <Avatar className="h-8 w-8">
+                    <AvatarImage src="/placeholder.svg" alt={user.name} />
+                    <AvatarFallback>
+                      {user.name
+                        .split(" ")
+                        .map((n) => n[0])
+                        .join("")}
+                    </AvatarFallback>
+                  </Avatar>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-56" align="end" forceMount>
+                <DropdownMenuLabel className="font-normal">
+                  <div className="flex flex-col space-y-1">
+                    <p className="text-sm font-medium leading-none">{user.name}</p>
+                    <p className="text-xs leading-none text-muted-foreground">{user.email}</p>
+                  </div>
+                </DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem asChild>
+                  <Link href="/settings">Settings</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={handleSignOut}>Log out</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          )}
+        </div>
+      </div>
+    </header>
+  )
+}

@@ -1,0 +1,103 @@
+{
+  "timestamp": "2025-07-31T23:58:07.056Z",
+  "summary": {
+    "passed": 14,
+    "failed": 0,
+    "total": 14,
+    "successRate": "100.00%"
+  },
+  "testData": {
+    "authToken": "eyJhbGciOiJIUzI1NiIsImtpZCI6IjJmdk5DdHVVSmJzN2F3c2oiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2tibXN5Z3lhd3BpcWVnZW16ZXRwLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJkYjA4ZTViNy1hN2VhLTQ3YjctODBjMi0xY2ZhM2QzNjRhNjUiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzU0MDA5ODY4LCJpYXQiOjE3NTQwMDYyNjgsImVtYWlsIjoibWFyd2llMDkwNEBnbWFpbC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoibWFyd2llMDkwNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZnVsbF9uYW1lIjoiTWFyIFdpZSBBbmciLCJwaG9uZV92ZXJpZmllZCI6ZmFsc2UsInN1YiI6ImRiMDhlNWI3LWE3ZWEtNDdiNy04MGMyLTFjZmEzZDM2NGE2NSJ9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6InBhc3N3b3JkIiwidGltZXN0YW1wIjoxNzU0MDA2MjY4fV0sInNlc3Npb25faWQiOiJkMzUzMzdlOS00Y2VmLTRhMzYtYmJjNi0yMWVmZGUwMjNkZDUiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.uTYSkvaB-SILdW54aqsjWl20aeS2XxPFA9GEf6GIaYc",
+    "userId": "db08e5b7-a7ea-47b7-80c2-1cfa3d364a65",
+    "organizationId": "45a23f20-be17-4ee0-af6a-a175966d3f45",
+    "agentId": "81baeaf9-43fe-4a04-9c31-a78a72f05f15",
+    "conversationId": "da08c90e-7330-4e6c-b13e-575f8cb765bd",
+    "leadId": null
+  },
+  "results": [
+    {
+      "category": "System",
+      "test": "Health Check",
+      "success": true,
+      "details": "Backend is healthy"
+    },
+    {
+      "category": "Auth",
+      "test": "Login",
+      "success": true,
+      "details": "User ID: db08e5b7-a7ea-47b7-80c2-1cfa3d364a65"
+    },
+    {
+      "category": "Organization",
+      "test": "Get Organization",
+      "success": true,
+      "details": "Leadify"
+    },
+    {
+      "category": "Organization",
+      "test": "Get Members",
+      "success": true,
+      "details": "1 members"
+    },
+    {
+      "category": "Agents",
+      "test": "Get Agents",
+      "success": true,
+      "details": "1 agents"
+    },
+    {
+      "category": "Conversations",
+      "test": "Get Conversations",
+      "success": true,
+      "details": "0 conversations"
+    },
+    {
+      "category": "Chat",
+      "test": "Send Message",
+      "success": true,
+      "details": "Conversation ID: da08c90e-7330-4e6c-b13e-575f8cb765bd"
+    },
+    {
+      "category": "Leads",
+      "test": "Get Leads",
+      "success": true,
+      "details": "0 leads"
+    },
+    {
+      "category": "Dashboard",
+      "test": "Get Summary",
+      "success": true,
+      "details": "Total leads: 0"
+    },
+    {
+      "category": "Dashboard",
+      "test": "Get Activity",
+      "success": true,
+      "details": "1 activities"
+    },
+    {
+      "category": "Settings",
+      "test": "Get Profile",
+      "success": true,
+      "details": "undefined"
+    },
+    {
+      "category": "Human-in-Loop",
+      "test": "Get Dashboard",
+      "success": true,
+      "details": "Not a human agent (expected)"
+    },
+    {
+      "category": "Human-in-Loop",
+      "test": "Get Priority Queue",
+      "success": true,
+      "details": "0 in queue"
+    },
+    {
+      "category": "Auth",
+      "test": "Logout",
+      "success": true,
+      "details": "Logged out"
+    }
+  ]
+}
