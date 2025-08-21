@@ -1009,8 +1009,6 @@ export function AgentManagementPage({ agent, onAgentUpdated }: AgentManagementPa
         </CardContent>
       </Card>
 
-      {/* Conversation Reference Images Section */}
-      <Card>
         <CardHeader>
           <CardTitle>Conversation Reference Images</CardTitle>
         </CardHeader>

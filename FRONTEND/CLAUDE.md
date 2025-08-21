@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Structure
 
-This is a Next.js 15 financial dashboard application located in `financial-dashboard-2/`. The main application uses:
+This is a Next.js 15 frontend application located in `frontend-application/`. The main application uses:
 
 - **Framework**: Next.js 15 with React 18 and TypeScript
 - **Styling**: Tailwind CSS with shadcn/ui components
@@ -14,10 +14,10 @@ This is a Next.js 15 financial dashboard application located in `financial-dashb
 
 ## Development Commands
 
-All development should be run from the `financial-dashboard-2/` directory:
+All development should be run from the `frontend-application/` directory:
 
 ```bash
-cd financial-dashboard-2
+cd frontend-application
 npm run dev        # Start development server
 npm run build      # Build for production
 npm run start      # Start production server

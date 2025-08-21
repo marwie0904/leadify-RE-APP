@@ -1,0 +1,119 @@
+{
+  "timestamp": "2025-08-17T08:38:01.783Z",
+  "orgId": "790a8df2-4942-4fc4-b505-9d40fdb1e52e",
+  "results": {
+    "organizations": {
+      "name": "Organizations List",
+      "url": "http://localhost:3000/admin/organizations",
+      "tests": [
+        {
+          "name": "Fetch real organizations from API",
+          "passed": true,
+          "details": "Status: 200, Data: Received"
+        },
+        {
+          "name": "Organization cards display real data",
+          "passed": false,
+          "details": "Names: 0, Status: 0"
+        }
+      ],
+      "success": false,
+      "successRate": "50.0"
+    },
+    "analytics": {
+      "name": "Analytics Dashboard",
+      "url": "http://localhost:3000/admin/organizations/790a8df2-4942-4fc4-b505-9d40fdb1e52e/analytics",
+      "tests": [
+        {
+          "name": "Fetch real analytics data from backend",
+          "passed": false,
+          "details": "Analytics components rendered"
+        },
+        {
+          "name": "Token usage by model shows real data",
+          "passed": false,
+          "details": "Models: 0, Token counts: 0"
+        }
+      ],
+      "success": false,
+      "successRate": "0.0"
+    },
+    "conversations": {
+      "name": "Conversations",
+      "url": "http://localhost:3000/admin/organizations/790a8df2-4942-4fc4-b505-9d40fdb1e52e/conversations",
+      "tests": [
+        {
+          "name": "Fetch real conversations from API",
+          "passed": true,
+          "details": "0 conversation rows found"
+        },
+        {
+          "name": "Display real conversation data",
+          "passed": false,
+          "details": "Emails: 0, Times: 0, Tokens: 0"
+        }
+      ],
+      "success": false,
+      "successRate": "50.0"
+    },
+    "leads": {
+      "name": "Leads Management",
+      "url": "http://localhost:3000/admin/organizations/790a8df2-4942-4fc4-b505-9d40fdb1e52e/leads",
+      "tests": [
+        {
+          "name": "Fetch real leads from backend",
+          "passed": true,
+          "details": "0 lead rows displayed"
+        },
+        {
+          "name": "Display real BANT scores",
+          "passed": false,
+          "details": "Scores: 0, Statuses: 0"
+        }
+      ],
+      "success": false,
+      "successRate": "50.0"
+    },
+    "members": {
+      "name": "Organization Members",
+      "url": "http://localhost:3000/admin/organizations/790a8df2-4942-4fc4-b505-9d40fdb1e52e/members",
+      "tests": [
+        {
+          "name": "Fetch real members from API",
+          "passed": true,
+          "details": "0 member rows found"
+        },
+        {
+          "name": "Display real member data",
+          "passed": true,
+          "details": "Emails: 0, Roles: 5"
+        }
+      ],
+      "success": true,
+      "successRate": "100.0"
+    },
+    "aiDetails": {
+      "name": "AI Agent Details",
+      "url": "http://localhost:3000/admin/organizations/790a8df2-4942-4fc4-b505-9d40fdb1e52e/ai-details",
+      "tests": [
+        {
+          "name": "Fetch real AI agents from backend",
+          "passed": true,
+          "details": "2 agent cards displayed"
+        },
+        {
+          "name": "Display real BANT configuration",
+          "passed": false,
+          "details": "BANT settings found: 0"
+        }
+      ],
+      "success": false,
+      "successRate": "50.0"
+    }
+  },
+  "summary": {
+    "totalTests": 12,
+    "passedTests": 6,
+    "successRate": "50.0"
+  }
+}

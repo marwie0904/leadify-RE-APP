@@ -1,0 +1,63 @@
+-- Simplified Migration Script for Supabase SQL Editor
+-- Run this script to add all missing columns
+
+-- Organizations table
+ALTER TABLE organizations ADD COLUMN IF NOT EXISTS status TEXT DEFAULT 'active';
+ALTER TABLE organizations ADD COLUMN IF NOT EXISTS plan TEXT DEFAULT 'enterprise';
+ALTER TABLE organizations ADD COLUMN IF NOT EXISTS created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW();
+ALTER TABLE organizations ADD COLUMN IF NOT EXISTS updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW();
+
+-- Organization Members table  
+ALTER TABLE organization_members ADD COLUMN IF NOT EXISTS created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW();
+ALTER TABLE organization_members ADD COLUMN IF NOT EXISTS status TEXT DEFAULT 'active';
+ALTER TABLE organization_members ADD COLUMN IF NOT EXISTS joined_at TIMESTAMP WITH TIME ZONE DEFAULT NOW();
+
+-- Agents table
+ALTER TABLE agents ADD COLUMN IF NOT EXISTS organization_id UUID;
+ALTER TABLE agents ADD COLUMN IF NOT EXISTS bant_enabled BOOLEAN DEFAULT false;
+ALTER TABLE agents ADD COLUMN IF NOT EXISTS bant_config JSONB DEFAULT '{}'::jsonb;
+ALTER TABLE agents ADD COLUMN IF NOT EXISTS type TEXT DEFAULT 'sales';
+ALTER TABLE agents ADD COLUMN IF NOT EXISTS system_prompt TEXT;
+ALTER TABLE agents ADD COLUMN IF NOT EXISTS active BOOLEAN DEFAULT true;
+ALTER TABLE agents ADD COLUMN IF NOT EXISTS token_usage INTEGER DEFAULT 0;
+ALTER TABLE agents ADD COLUMN IF NOT EXISTS conversation_count INTEGER DEFAULT 0;
+
+-- Conversations table
+ALTER TABLE conversations ADD COLUMN IF NOT EXISTS created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW();
+ALTER TABLE conversations ADD COLUMN IF NOT EXISTS organization_id UUID;
+ALTER TABLE conversations ADD COLUMN IF NOT EXISTS message_count INTEGER DEFAULT 0;
+ALTER TABLE conversations ADD COLUMN IF NOT EXISTS total_tokens INTEGER DEFAULT 0;
+ALTER TABLE conversations ADD COLUMN IF NOT EXISTS estimated_cost DECIMAL(10,4) DEFAULT 0;
+ALTER TABLE conversations ADD COLUMN IF NOT EXISTS user_name TEXT;
+ALTER TABLE conversations ADD COLUMN IF NOT EXISTS user_email TEXT;
+ALTER TABLE conversations ADD COLUMN IF NOT EXISTS user_phone TEXT;
+
+-- Messages table
+ALTER TABLE messages ADD COLUMN IF NOT EXISTS created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW();
+ALTER TABLE messages ADD COLUMN IF NOT EXISTS token_count INTEGER DEFAULT 0;
+ALTER TABLE messages ADD COLUMN IF NOT EXISTS model TEXT DEFAULT 'gpt-4';
+ALTER TABLE messages ADD COLUMN IF NOT EXISTS cost DECIMAL(10,6) DEFAULT 0;
+
+-- Leads table - Add BANT columns
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS bant_budget INTEGER DEFAULT 0;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS bant_authority INTEGER DEFAULT 0;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS bant_need INTEGER DEFAULT 0;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS bant_timeline INTEGER DEFAULT 0;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS organization_id UUID;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS name TEXT;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS phone TEXT;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS status TEXT DEFAULT 'new';
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS score INTEGER DEFAULT 0;
+
+-- Create issues table if not exists
+CREATE TABLE IF NOT EXISTS issues (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  organization_id UUID NOT NULL,
+  title TEXT NOT NULL,
+  description TEXT,
+  status TEXT DEFAULT 'open',
+  priority TEXT DEFAULT 'medium',
+  type TEXT DEFAULT 'bug',
+  created_by UUID,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);

@@ -1,8 +1,1029 @@
-npm error code ENOENT
-npm error syscall open
-npm error path /Users/macbookpro/Business/REAL-ESTATE-WEB-APP/package.json
-npm error errno -2
-npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/Users/macbookpro/Business/REAL-ESTATE-WEB-APP/package.json'
-npm error enoent This is related to npm not being able to find a file.
-npm error enoent
-npm error A complete log of this run can be found in: /Users/macbookpro/.npm/_logs/2025-07-31T23_53_29_543Z-debug-0.log
+[DEBUG][ENV] SUPABASE_URL: https://kbmsygyawpiqegemzetp.supabase.co
+[DEBUG][ENV] SUPABASE_SERVICE_ROLE_KEY: SET
+[DEMO] Facebook demo handler not available
+🚀 Server running on port 3001
+📊 Health check: http://localhost:3001/api/health
+🌐 Environment: development
+[Invite Verify] Looking for token: 39bb8b18ec5579dd60af88f012b7b08377b3f0e6b704b58f6287005bd1cb8914
+[Invite Verify] Token length: 64
+[Invite Verify] Looking for token: 39bb8b18ec5579dd60af88f012b7b08377b3f0e6b704b58f6287005bd1cb8914
+[Invite Verify] Token length: 64
+[Invite Verify] User exists check: { email: 'marwie.ang.0904@gmail.com', exists: true }
+[Invite Verify] SUCCESS - Valid invitation: {
+  email: 'marwie.ang.0904@gmail.com',
+  organizationName: 'leadify',
+  userExists: true,
+  token: '39bb8b18ec...'
+}
+[Invite Verify] User exists check: { email: 'marwie.ang.0904@gmail.com', exists: true }
+[Invite Verify] SUCCESS - Valid invitation: {
+  email: 'marwie.ang.0904@gmail.com',
+  organizationName: 'leadify',
+  userExists: true,
+  token: '39bb8b18ec...'
+}
+[Organization Invite] Email sent successfully to zarealmarwie@gmail.com. Email ID: undefined
+[Organization Invite] Successfully created invitation for zarealmarwie@gmail.com to join leadify
+[Organization Members] Returning 1 members for organization 770257fa-dc41-4529-9cb3-43b47072c271
+[Organization Members] Sending organizationId: 770257fa-dc41-4529-9cb3-43b47072c271
+[Invite Verify] Looking for token: fc3425010a72e508edadfdcf3cf74bd3c9e8c76f6a87ba13fa1454f5d4191514
+[Invite Verify] Token length: 64
+[Invite Verify] Looking for token: fc3425010a72e508edadfdcf3cf74bd3c9e8c76f6a87ba13fa1454f5d4191514
+[Invite Verify] Token length: 64
+[Invite Verify] User exists check: { email: 'zarealmarwie@gmail.com', exists: false }
+[Invite Verify] SUCCESS - Valid invitation: {
+  email: 'zarealmarwie@gmail.com',
+  organizationName: 'leadify',
+  userExists: false,
+  token: 'fc3425010a...'
+}
+[Invite Verify] User exists check: { email: 'zarealmarwie@gmail.com', exists: false }
+[Invite Verify] SUCCESS - Valid invitation: {
+  email: 'zarealmarwie@gmail.com',
+  organizationName: 'leadify',
+  userExists: false,
+  token: 'fc3425010a...'
+}
+[Invite Verify] Looking for token: fc3425010a72e508edadfdcf3cf74bd3c9e8c76f6a87ba13fa1454f5d4191514
+[Invite Verify] Token length: 64
+[Invite Verify] Looking for token: fc3425010a72e508edadfdcf3cf74bd3c9e8c76f6a87ba13fa1454f5d4191514
+[Invite Verify] Token length: 64
+[Invite Verify] User exists check: { email: 'zarealmarwie@gmail.com', exists: false }
+[Invite Verify] SUCCESS - Valid invitation: {
+  email: 'zarealmarwie@gmail.com',
+  organizationName: 'leadify',
+  userExists: false,
+  token: 'fc3425010a...'
+}
+[Invite Verify] User exists check: { email: 'zarealmarwie@gmail.com', exists: false }
+[Invite Verify] SUCCESS - Valid invitation: {
+  email: 'zarealmarwie@gmail.com',
+  organizationName: 'leadify',
+  userExists: false,
+  token: 'fc3425010a...'
+}
+[INVITE ACCEPT] Starting invite acceptance...
+[INVITE ACCEPT] Request body: {
+  token: 'fc3425010a72e508edadfdcf3cf74bd3c9e8c76f6a87ba13fa1454f5d4191514',
+  password: '[HIDDEN]',
+  confirmPassword: 'ayokonga123',
+  firstName: 'Zar Zie',
+  lastName: 'Zang',
+  existingUser: false
+}
+[INVITE ACCEPT] Verifying invitation token...
+[INVITE ACCEPT] Valid invitation found: {
+  email: 'zarealmarwie@gmail.com',
+  organizationId: '770257fa-dc41-4529-9cb3-43b47072c271',
+  organizationName: 'leadify'
+}
+[INVITE ACCEPT] Creating new user account with auto-confirmation...
+[INVITE ACCEPT] New user created successfully with auto-confirmation: {
+  userId: 'a8a9a81e-74b6-4206-b6a8-ce2d321c3ac9',
+  email: 'zarealmarwie@gmail.com',
+  emailConfirmed: true
+}
+[INVITE ACCEPT] User authenticated, proceeding to add to organization...
+[INVITE ACCEPT] User ID: a8a9a81e-74b6-4206-b6a8-ce2d321c3ac9
+[INVITE ACCEPT] Has Session: true
+[INVITE ACCEPT] Adding user to organization...
+[INVITE ACCEPT] User successfully added to organization: {
+  id: 'e8320bd1-5a4f-4c84-8688-70d2fed6c896',
+  organization_id: '770257fa-dc41-4529-9cb3-43b47072c271',
+  user_id: 'a8a9a81e-74b6-4206-b6a8-ce2d321c3ac9',
+  role: 'member',
+  invited_at: '2025-08-09T05:57:06.602414+00:00',
+  joined_at: '2025-08-09T05:57:06.511+00:00'
+}
+[INVITE ACCEPT] Invitation process completed successfully
+[Organization Members] Returning 2 members for organization 770257fa-dc41-4529-9cb3-43b47072c271
+[Organization Members] Sending organizationId: 770257fa-dc41-4529-9cb3-43b47072c271
+[Organization Members] Returning 2 members for organization 770257fa-dc41-4529-9cb3-43b47072c271
+[Organization Members] Sending organizationId: 770257fa-dc41-4529-9cb3-43b47072c271
+[Role Update] Successfully updated role for user: a8a9a81e-74b6-4206-b6a8-ce2d321c3ac9 to: agent
+[Organization Members] Returning 2 members for organization 770257fa-dc41-4529-9cb3-43b47072c271
+[Organization Members] Sending organizationId: 770257fa-dc41-4529-9cb3-43b47072c271
+[Organization Members] Returning 2 members for organization 770257fa-dc41-4529-9cb3-43b47072c271
+[Organization Members] Sending organizationId: 770257fa-dc41-4529-9cb3-43b47072c271
+[Agents] User 4c984a9a-150e-4673-8192-17f80a7ef4d7 belongs to organizations: [ '770257fa-dc41-4529-9cb3-43b47072c271' ]
+[Agents] User 4c984a9a-150e-4673-8192-17f80a7ef4d7 belongs to organizations: [ '770257fa-dc41-4529-9cb3-43b47072c271' ]
+[Agents] Found 1 agents using organization_id
+[Agents] Returning 1 agents for user 4c984a9a-150e-4673-8192-17f80a7ef4d7
+[Agents] Found 1 agents using organization_id
+[Agents] Returning 1 agents for user 4c984a9a-150e-4673-8192-17f80a7ef4d7
+[FB Status] Checking status for agent: ec41d39f-7009-4a84-b00e-095745e17158
+[FB Status] Found 0 page mappings
+[Agents] User 4c984a9a-150e-4673-8192-17f80a7ef4d7 belongs to organizations: [ '770257fa-dc41-4529-9cb3-43b47072c271' ]
+[Agents] User 4c984a9a-150e-4673-8192-17f80a7ef4d7 belongs to organizations: [ '770257fa-dc41-4529-9cb3-43b47072c271' ]
+[Agents] Found 1 agents using organization_id
+[Agents] Returning 1 agents for user 4c984a9a-150e-4673-8192-17f80a7ef4d7
+[Agents] Found 1 agents using organization_id
+[Agents] Returning 1 agents for user 4c984a9a-150e-4673-8192-17f80a7ef4d7
+[FB Status] Checking status for agent: ec41d39f-7009-4a84-b00e-095745e17158
+[FB Status] Found 0 page mappings
+
+======================================================================
+📨 NEW CHAT REQUEST RECEIVED
+======================================================================
+[CHAT] 🕒 Timestamp: 2025-08-09T05:57:33.473Z
+[CHAT] 📧 Message: "hello..."
+[CHAT] 🤖 Agent ID: ec41d39f-7009-4a84-b00e-095745e17158
+[CHAT] 🌐 Source: web
+[CHAT] 👤 User ID: preview-user
+[CHAT] 💬 Conversation ID: New conversation
+======================================================================
+[TIMING] Conversation fetch/create: 782ms
+[CHAT] Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[DEBUG] Starting parallel operations for conversation cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[DEBUG] About to save message and fetch agent data...
+[DEBUG] Agent config fetched: found
+[DEBUG] Agent fetched: found
+[DEBUG] Messages fetched: 0 messages
+[DEBUG] Message saved for cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[TIMING] Parallel DB operations (save msg + fetch agent/config/messages): 727ms
+
+[MASTER INTENT] ============================================================
+[MASTER INTENT] 🧠 CONTEXT-AWARE INTENT CLASSIFICATION
+[MASTER INTENT] ============================================================
+[MASTER INTENT] 📝 User Message: "hello..."
+[MASTER INTENT] 📊 Context Window: 1 messages
+[MASTER INTENT] 🤖 Model: gpt-4.1-nano-2025-04-14 + Pattern Recognition
+[TIMING] AI Intent Classification: 2307ms
+[MASTER INTENT] 🤖 AI Response: "GREETING"
+[MASTER INTENT] ✅ FINAL CLASSIFICATION: GREETING
+[MASTER INTENT] ⏱️ Response Time: 2307ms
+[MASTER INTENT] ============================================================
+
+[TIMING] Intent Classification: 2310ms 
+[CHAT] Intent Classification: GREETING
+[GREETING] Handling greeting message instantly
+[GREETING] Response generated in 0ms (no API call)
+
+======================================================================
+🎉 CHAT REQUEST COMPLETED
+======================================================================
+[CHAT] 🎯 Final Intent: GREETING
+[CHAT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[CHAT] 🤖 AI Response: "Hi there! I'd be happy to assist you with your real estate needs. Are you looking to buy or rent?..."
+[CHAT] ⏱️ Total Processing Time: 3820ms
+[CHAT] ✅ Response sent to client
+======================================================================
+
+[ASYNC] AI message saved
+[Conversation Messages] Retrieved 2 messages for conversation cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+
+======================================================================
+📨 NEW CHAT REQUEST RECEIVED
+======================================================================
+[CHAT] 🕒 Timestamp: 2025-08-09T05:58:28.645Z
+[CHAT] 📧 Message: "what properties do you have in katipunan?..."
+[CHAT] 🤖 Agent ID: ec41d39f-7009-4a84-b00e-095745e17158
+[CHAT] 🌐 Source: web
+[CHAT] 👤 User ID: preview-user
+[CHAT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+======================================================================
+[TIMING] Conversation fetch/create: 270ms
+[CHAT] Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[DEBUG] Starting parallel operations for conversation cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[DEBUG] About to save message and fetch agent data...
+[DEBUG] Agent fetched: found
+[DEBUG] Agent config fetched: found
+[DEBUG] Messages fetched: 2 messages
+[DEBUG] Message saved for cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[TIMING] Parallel DB operations (save msg + fetch agent/config/messages): 841ms
+
+[MASTER INTENT] ============================================================
+[MASTER INTENT] 🧠 CONTEXT-AWARE INTENT CLASSIFICATION
+[MASTER INTENT] ============================================================
+[MASTER INTENT] 📝 User Message: "what properties do you have in katipunan?..."
+[MASTER INTENT] 📊 Context Window: 3 messages
+[MASTER INTENT] 🤖 Model: gpt-4.1-nano-2025-04-14 + Pattern Recognition
+[MASTER INTENT] 🎯 Context: AI just asked about NEED
+[MASTER INTENT] 🔍 Pattern Detection: BANT answer detected!
+[MASTER INTENT]   Type: contact
+[MASTER INTENT]   Confidence: 90%
+[MASTER INTENT] ✅ HIGH CONFIDENCE PATTERN MATCH: BANT
+[MASTER INTENT] 🚀 Skipping AI classification (pattern confidence: 90%)
+[MASTER INTENT] ============================================================
+
+[TIMING] Intent Classification: 2ms 
+[CHAT] Intent Classification: BANT
+
+[BANT] ============================================================
+[BANT] 🎯 PROCESSING BANT WORKFLOW
+[BANT] ============================================================
+[BANT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[BANT] 👤 User: preview-user
+[BANT] 📧 Message: "what properties do you have in katipunan?..."
+[BANT] Using system_prompt from agent_configs (intent=BANT)
+[BANT] Prompt length: 88 characters
+[BANT EXTRACTION] Starting synchronous BANT extraction...
+[BANT EXTRACTION] Starting with 3 existing messages
+[BANT EXTRACTION] Last 3 messages before adding current:
+  [0] user: "hello..."
+  [1] ai: "Hi there! I'd be happy to assist you with your rea..."
+  [2] user: "what properties do you have in katipunan?..."
+[BANT EXTRACTION] Current message already included, total: 3 messages
+[BANT EXTRACTION] Final messages for extraction:
+  [-1] user: "hello..."
+  [0] ai: "Hi there! I'd be happy to assist you with your rea..."
+  [1] user: "what properties do you have in katipunan?..."
+
+[EXTRACT BANT] ===== STARTING AI BANT EXTRACTION =====
+[EXTRACT BANT] Analyzing last 3 messages
+[EXTRACT BANT] 🤖 Using AI extraction ONLY (no pattern detection)
+[EXTRACT BANT] 🤖 AI Extraction Results:
+[EXTRACT BANT]   Budget: ❌ Not found
+[EXTRACT BANT]   Authority: ❌ Not found
+[EXTRACT BANT]   Need: ❌ Not found
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ✅ Final Results (AI Only):
+[EXTRACT BANT]   Budget: ❌ Not found
+[EXTRACT BANT]   Authority: ❌ Not found
+[EXTRACT BANT]   Need: ❌ Not found
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ===== EXTRACTION COMPLETE =====
+
+[BANT EXTRACTION] Extraction took 1833ms
+[BANT PROMPT] Current BANT state after synchronous extraction:
+  Budget: ❌ NOT FOUND
+  Authority: ❌ NOT FOUND
+  Need: ❌ NOT FOUND
+  Timeline: ❌ NOT FOUND
+[BANT] Using FIXED QUESTIONS LOGIC for guaranteed accuracy
+
+[EXTRACT BANT] ===== STARTING AI BANT EXTRACTION =====
+[EXTRACT BANT] Analyzing last 2 messages
+[EXTRACT BANT] 🤖 Using AI extraction ONLY (no pattern detection)
+[EXTRACT BANT] 🤖 AI Extraction Results:
+[EXTRACT BANT]   Budget: ❌ Not found
+[EXTRACT BANT]   Authority: ❌ Not found
+[EXTRACT BANT]   Need: ❌ Not found
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ✅ Final Results (AI Only):
+[EXTRACT BANT]   Budget: ❌ Not found
+[EXTRACT BANT]   Authority: ❌ Not found
+[EXTRACT BANT]   Need: ❌ Not found
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ===== EXTRACTION COMPLETE =====
+
+[BANT] Previous BANT state: { budget: null, authority: null, need: null, timeline: null }
+[BANT] Fixed response generated:
+  Acknowledgment: ""
+  Next Question: "To help find the perfect property for you, what's your budget range?"
+  Full Response: "To help find the perfect property for you, what's your budget range?"
+
+======================================================================
+🎉 CHAT REQUEST COMPLETED
+======================================================================
+[CHAT] 🎯 Final Intent: BANT
+[CHAT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[CHAT] 🤖 AI Response: "To help find the perfect property for you, what's your budget range?..."
+[CHAT] ⏱️ Total Processing Time: 4608ms
+[CHAT] ✅ Response sent to client
+======================================================================
+
+[ASYNC] AI message saved
+
+======================================================================
+📨 NEW CHAT REQUEST RECEIVED
+======================================================================
+[CHAT] 🕒 Timestamp: 2025-08-09T05:58:37.038Z
+[CHAT] 📧 Message: "50M..."
+[CHAT] 🤖 Agent ID: ec41d39f-7009-4a84-b00e-095745e17158
+[CHAT] 🌐 Source: web
+[CHAT] 👤 User ID: preview-user
+[CHAT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+======================================================================
+[TIMING] Conversation fetch/create: 263ms
+[CHAT] Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[DEBUG] Starting parallel operations for conversation cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[DEBUG] About to save message and fetch agent data...
+[DEBUG] Agent config fetched: found
+[DEBUG] Agent fetched: found
+[DEBUG] Messages fetched: 4 messages
+[DEBUG] Message saved for cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[TIMING] Parallel DB operations (save msg + fetch agent/config/messages): 729ms
+
+[MASTER INTENT] ============================================================
+[MASTER INTENT] 🧠 CONTEXT-AWARE INTENT CLASSIFICATION
+[MASTER INTENT] ============================================================
+[MASTER INTENT] 📝 User Message: "50M..."
+[MASTER INTENT] 📊 Context Window: 5 messages
+[MASTER INTENT] 🤖 Model: gpt-4.1-nano-2025-04-14 + Pattern Recognition
+[MASTER INTENT] 🎯 Context: AI just asked about BUDGET
+[MASTER INTENT] 🔍 Pattern Detection: BANT answer detected!
+[MASTER INTENT]   Type: budget
+[MASTER INTENT]   Confidence: 90%
+[MASTER INTENT] ✅ HIGH CONFIDENCE PATTERN MATCH: BANT
+[MASTER INTENT] 🚀 Skipping AI classification (pattern confidence: 90%)
+[MASTER INTENT] ============================================================
+
+[TIMING] Intent Classification: 0ms 
+[CHAT] Intent Classification: BANT
+
+[BANT] ============================================================
+[BANT] 🎯 PROCESSING BANT WORKFLOW
+[BANT] ============================================================
+[BANT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[BANT] 👤 User: preview-user
+[BANT] 📧 Message: "50M..."
+[BANT] Using system_prompt from agent_configs (intent=BANT)
+[BANT] Prompt length: 88 characters
+[BANT EXTRACTION] Starting synchronous BANT extraction...
+[BANT EXTRACTION] Starting with 5 existing messages
+[BANT EXTRACTION] Last 3 messages before adding current:
+  [0] user: "what properties do you have in katipunan?..."
+  [1] ai: "To help find the perfect property for you, what's ..."
+  [2] user: "50M..."
+[BANT EXTRACTION] Current message already included, total: 5 messages
+[BANT EXTRACTION] Final messages for extraction:
+  [1] ai: "Hi there! I'd be happy to assist you with your rea..."
+  [2] user: "what properties do you have in katipunan?..."
+  [3] ai: "To help find the perfect property for you, what's ..."
+  [4] user: "50M..."
+
+[EXTRACT BANT] ===== STARTING AI BANT EXTRACTION =====
+[EXTRACT BANT] Analyzing last 5 messages
+[EXTRACT BANT] 🤖 Using AI extraction ONLY (no pattern detection)
+[EXTRACT BANT] 🤖 AI Extraction Results:
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: ❌ Not found
+[EXTRACT BANT]   Need: ❌ Not found
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ✅ Final Results (AI Only):
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: ❌ Not found
+[EXTRACT BANT]   Need: ❌ Not found
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ===== EXTRACTION COMPLETE =====
+
+[BANT EXTRACTION] Extraction took 1660ms
+[BANT PROMPT] Current BANT state after synchronous extraction:
+  Budget: 50M
+  Authority: ❌ NOT FOUND
+  Need: ❌ NOT FOUND
+  Timeline: ❌ NOT FOUND
+[BANT] Using FIXED QUESTIONS LOGIC for guaranteed accuracy
+
+[EXTRACT BANT] ===== STARTING AI BANT EXTRACTION =====
+[EXTRACT BANT] Analyzing last 4 messages
+[EXTRACT BANT] 🤖 Using AI extraction ONLY (no pattern detection)
+[EXTRACT BANT] 🤖 AI Extraction Results:
+[EXTRACT BANT]   Budget: ❌ Not found
+[EXTRACT BANT]   Authority: ❌ Not found
+[EXTRACT BANT]   Need: ❌ Not found
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ✅ Final Results (AI Only):
+[EXTRACT BANT]   Budget: ❌ Not found
+[EXTRACT BANT]   Authority: ❌ Not found
+[EXTRACT BANT]   Need: ❌ Not found
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ===== EXTRACTION COMPLETE =====
+
+[BANT] Previous BANT state: { budget: null, authority: null, need: null, timeline: null }
+[BANT] Fixed response generated:
+  Acknowledgment: "Great! I've noted your budget of 50M. "
+  Next Question: "Will you be the sole decision maker for this purchase?"
+  Full Response: "Great! I've noted your budget of 50M. Will you be the sole decision maker for this purchase?"
+
+======================================================================
+🎉 CHAT REQUEST COMPLETED
+======================================================================
+[CHAT] 🎯 Final Intent: BANT
+[CHAT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[CHAT] 🤖 AI Response: "Great! I've noted your budget of 50M. Will you be the sole decision maker for this purchase?..."
+[CHAT] ⏱️ Total Processing Time: 3340ms
+[CHAT] ✅ Response sent to client
+======================================================================
+
+[ASYNC] AI message saved
+
+======================================================================
+📨 NEW CHAT REQUEST RECEIVED
+======================================================================
+[CHAT] 🕒 Timestamp: 2025-08-09T05:58:46.111Z
+[CHAT] 📧 Message: "yes..."
+[CHAT] 🤖 Agent ID: ec41d39f-7009-4a84-b00e-095745e17158
+[CHAT] 🌐 Source: web
+[CHAT] 👤 User ID: preview-user
+[CHAT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+======================================================================
+[TIMING] Conversation fetch/create: 256ms
+[CHAT] Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[DEBUG] Starting parallel operations for conversation cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[DEBUG] About to save message and fetch agent data...
+[DEBUG] Messages fetched: 6 messages
+[DEBUG] Agent fetched: found
+[DEBUG] Agent config fetched: found
+[DEBUG] Message saved for cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[TIMING] Parallel DB operations (save msg + fetch agent/config/messages): 715ms
+
+[MASTER INTENT] ============================================================
+[MASTER INTENT] 🧠 CONTEXT-AWARE INTENT CLASSIFICATION
+[MASTER INTENT] ============================================================
+[MASTER INTENT] 📝 User Message: "yes..."
+[MASTER INTENT] 📊 Context Window: 5 messages
+[MASTER INTENT] 🤖 Model: gpt-4.1-nano-2025-04-14 + Pattern Recognition
+[MASTER INTENT] 🎯 Context: AI just asked about BUDGET
+[MASTER INTENT] 🔍 Pattern Detection: BANT answer detected!
+[MASTER INTENT]   Type: authority
+[MASTER INTENT]   Confidence: 95%
+[MASTER INTENT] ✅ HIGH CONFIDENCE PATTERN MATCH: BANT
+[MASTER INTENT] 🚀 Skipping AI classification (pattern confidence: 95%)
+[MASTER INTENT] ============================================================
+
+[TIMING] Intent Classification: 0ms 
+[CHAT] Intent Classification: BANT
+
+[BANT] ============================================================
+[BANT] 🎯 PROCESSING BANT WORKFLOW
+[BANT] ============================================================
+[BANT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[BANT] 👤 User: preview-user
+[BANT] 📧 Message: "yes..."
+[BANT] Using system_prompt from agent_configs (intent=BANT)
+[BANT] Prompt length: 88 characters
+[BANT EXTRACTION] Starting synchronous BANT extraction...
+[BANT EXTRACTION] Starting with 7 existing messages
+[BANT EXTRACTION] Last 3 messages before adding current:
+  [0] user: "50M..."
+  [1] ai: "Great! I've noted your budget of 50M. Will you be ..."
+  [2] user: "yes..."
+[BANT EXTRACTION] Current message already included, total: 7 messages
+[BANT EXTRACTION] Final messages for extraction:
+  [3] ai: "To help find the perfect property for you, what's ..."
+  [4] user: "50M..."
+  [5] ai: "Great! I've noted your budget of 50M. Will you be ..."
+  [6] user: "yes..."
+
+[EXTRACT BANT] ===== STARTING AI BANT EXTRACTION =====
+[EXTRACT BANT] Analyzing last 7 messages
+[EXTRACT BANT] 🤖 Using AI extraction ONLY (no pattern detection)
+[EXTRACT BANT] 🤖 AI Extraction Results:
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: yes
+[EXTRACT BANT]   Need: ❌ Not found
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ✅ Final Results (AI Only):
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: yes
+[EXTRACT BANT]   Need: ❌ Not found
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ===== EXTRACTION COMPLETE =====
+
+[BANT EXTRACTION] Extraction took 2200ms
+[BANT PROMPT] Current BANT state after synchronous extraction:
+  Budget: 50M
+  Authority: yes
+  Need: ❌ NOT FOUND
+  Timeline: ❌ NOT FOUND
+[BANT] Using FIXED QUESTIONS LOGIC for guaranteed accuracy
+
+[EXTRACT BANT] ===== STARTING AI BANT EXTRACTION =====
+[EXTRACT BANT] Analyzing last 6 messages
+[EXTRACT BANT] 🤖 Using AI extraction ONLY (no pattern detection)
+[EXTRACT BANT] 🤖 AI Extraction Results:
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: ❌ Not found
+[EXTRACT BANT]   Need: ❌ Not found
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ✅ Final Results (AI Only):
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: ❌ Not found
+[EXTRACT BANT]   Need: ❌ Not found
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ===== EXTRACTION COMPLETE =====
+
+[BANT] Previous BANT state: { budget: '50M', authority: null, need: null, timeline: null }
+[BANT] Fixed response generated:
+  Acknowledgment: "Perfect, thank you for confirming. "
+  Next Question: "Will this property be for personal residence or investment?"
+  Full Response: "Perfect, thank you for confirming. Will this property be for personal residence or investment?"
+
+======================================================================
+🎉 CHAT REQUEST COMPLETED
+======================================================================
+[CHAT] 🎯 Final Intent: BANT
+[CHAT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[CHAT] 🤖 AI Response: "Perfect, thank you for confirming. Will this property be for personal residence or investment?..."
+[CHAT] ⏱️ Total Processing Time: 4535ms
+[CHAT] ✅ Response sent to client
+======================================================================
+
+[ASYNC] AI message saved
+
+======================================================================
+📨 NEW CHAT REQUEST RECEIVED
+======================================================================
+[CHAT] 🕒 Timestamp: 2025-08-09T05:59:53.936Z
+[CHAT] 📧 Message: "personal residence ..."
+[CHAT] 🤖 Agent ID: ec41d39f-7009-4a84-b00e-095745e17158
+[CHAT] 🌐 Source: web
+[CHAT] 👤 User ID: preview-user
+[CHAT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+======================================================================
+[TIMING] Conversation fetch/create: 762ms
+[CHAT] Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[DEBUG] Starting parallel operations for conversation cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[DEBUG] About to save message and fetch agent data...
+[DEBUG] Agent config fetched: found
+[DEBUG] Agent fetched: found
+[DEBUG] Messages fetched: 8 messages
+[DEBUG] Message saved for cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[TIMING] Parallel DB operations (save msg + fetch agent/config/messages): 752ms
+
+[MASTER INTENT] ============================================================
+[MASTER INTENT] 🧠 CONTEXT-AWARE INTENT CLASSIFICATION
+[MASTER INTENT] ============================================================
+[MASTER INTENT] 📝 User Message: "personal residence ..."
+[MASTER INTENT] 📊 Context Window: 5 messages
+[MASTER INTENT] 🤖 Model: gpt-4.1-nano-2025-04-14 + Pattern Recognition
+[MASTER INTENT] 🎯 Context: AI just asked about BUDGET
+[MASTER INTENT] 🔍 Pattern Detection: BANT answer detected!
+[MASTER INTENT]   Type: need
+[MASTER INTENT]   Confidence: 90%
+[MASTER INTENT] ✅ HIGH CONFIDENCE PATTERN MATCH: BANT
+[MASTER INTENT] 🚀 Skipping AI classification (pattern confidence: 90%)
+[MASTER INTENT] ============================================================
+
+[TIMING] Intent Classification: 0ms 
+[CHAT] Intent Classification: BANT
+
+[BANT] ============================================================
+[BANT] 🎯 PROCESSING BANT WORKFLOW
+[BANT] ============================================================
+[BANT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[BANT] 👤 User: preview-user
+[BANT] 📧 Message: "personal residence ..."
+[BANT] Using system_prompt from agent_configs (intent=BANT)
+[BANT] Prompt length: 88 characters
+[BANT EXTRACTION] Starting synchronous BANT extraction...
+[BANT EXTRACTION] Starting with 9 existing messages
+[BANT EXTRACTION] Last 3 messages before adding current:
+  [0] user: "yes..."
+  [1] ai: "Perfect, thank you for confirming. Will this prope..."
+  [2] user: "personal residence ..."
+[BANT EXTRACTION] Current message already included, total: 9 messages
+[BANT EXTRACTION] Final messages for extraction:
+  [5] ai: "Great! I've noted your budget of 50M. Will you be ..."
+  [6] user: "yes..."
+  [7] ai: "Perfect, thank you for confirming. Will this prope..."
+  [8] user: "personal residence ..."
+
+[EXTRACT BANT] ===== STARTING AI BANT EXTRACTION =====
+[EXTRACT BANT] Analyzing last 9 messages
+[EXTRACT BANT] 🤖 Using AI extraction ONLY (no pattern detection)
+[EXTRACT BANT] 🤖 AI Extraction Results:
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: yes
+[EXTRACT BANT]   Need: personal residence
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ✅ Final Results (AI Only):
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: yes
+[EXTRACT BANT]   Need: personal residence
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ===== EXTRACTION COMPLETE =====
+
+[BANT EXTRACTION] Extraction took 2094ms
+[BANT PROMPT] Current BANT state after synchronous extraction:
+  Budget: 50M
+  Authority: yes
+  Need: personal residence
+  Timeline: ❌ NOT FOUND
+[BANT] Using FIXED QUESTIONS LOGIC for guaranteed accuracy
+
+[EXTRACT BANT] ===== STARTING AI BANT EXTRACTION =====
+[EXTRACT BANT] Analyzing last 8 messages
+[EXTRACT BANT] 🤖 Using AI extraction ONLY (no pattern detection)
+[EXTRACT BANT] 🤖 AI Extraction Results:
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: yes
+[EXTRACT BANT]   Need: ❌ Not found
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ✅ Final Results (AI Only):
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: yes
+[EXTRACT BANT]   Need: ❌ Not found
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ===== EXTRACTION COMPLETE =====
+
+[BANT] Previous BANT state: { budget: '50M', authority: 'yes', need: null, timeline: null }
+[BANT] Fixed response generated:
+  Acknowledgment: "Great, for your personal residence! "
+  Next Question: "When are you planning to make this purchase?"
+  Full Response: "Great, for your personal residence! When are you planning to make this purchase?"
+
+======================================================================
+🎉 CHAT REQUEST COMPLETED
+======================================================================
+[CHAT] 🎯 Final Intent: BANT
+[CHAT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[CHAT] 🤖 AI Response: "Great, for your personal residence! When are you planning to make this purchase?..."
+[CHAT] ⏱️ Total Processing Time: 5162ms
+[CHAT] ✅ Response sent to client
+======================================================================
+
+[ASYNC] AI message saved
+
+======================================================================
+📨 NEW CHAT REQUEST RECEIVED
+======================================================================
+[CHAT] 🕒 Timestamp: 2025-08-09T06:00:04.164Z
+[CHAT] 📧 Message: "next month..."
+[CHAT] 🤖 Agent ID: ec41d39f-7009-4a84-b00e-095745e17158
+[CHAT] 🌐 Source: web
+[CHAT] 👤 User ID: preview-user
+[CHAT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+======================================================================
+[TIMING] Conversation fetch/create: 252ms
+[CHAT] Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[DEBUG] Starting parallel operations for conversation cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[DEBUG] About to save message and fetch agent data...
+[DEBUG] Agent config fetched: found
+[DEBUG] Agent fetched: found
+[DEBUG] Messages fetched: 10 messages
+[DEBUG] Message saved for cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[TIMING] Parallel DB operations (save msg + fetch agent/config/messages): 742ms
+
+[MASTER INTENT] ============================================================
+[MASTER INTENT] 🧠 CONTEXT-AWARE INTENT CLASSIFICATION
+[MASTER INTENT] ============================================================
+[MASTER INTENT] 📝 User Message: "next month..."
+[MASTER INTENT] 📊 Context Window: 5 messages
+[MASTER INTENT] 🤖 Model: gpt-4.1-nano-2025-04-14 + Pattern Recognition
+[MASTER INTENT] 🎯 Context: AI just asked about NEED
+[MASTER INTENT] 🔍 Pattern Detection: BANT answer detected!
+[MASTER INTENT]   Type: timeline
+[MASTER INTENT]   Confidence: 85%
+[MASTER INTENT] ✅ HIGH CONFIDENCE PATTERN MATCH: BANT
+[MASTER INTENT] 🚀 Skipping AI classification (pattern confidence: 85%)
+[MASTER INTENT] ============================================================
+
+[TIMING] Intent Classification: 1ms 
+[CHAT] Intent Classification: BANT
+
+[BANT] ============================================================
+[BANT] 🎯 PROCESSING BANT WORKFLOW
+[BANT] ============================================================
+[BANT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[BANT] 👤 User: preview-user
+[BANT] 📧 Message: "next month..."
+[BANT] Using system_prompt from agent_configs (intent=BANT)
+[BANT] Prompt length: 88 characters
+[BANT EXTRACTION] Starting synchronous BANT extraction...
+[BANT EXTRACTION] Starting with 11 existing messages
+[BANT EXTRACTION] Last 3 messages before adding current:
+  [0] user: "personal residence ..."
+  [1] ai: "Great, for your personal residence! When are you p..."
+  [2] user: "next month..."
+[BANT EXTRACTION] Current message already included, total: 11 messages
+[BANT EXTRACTION] Final messages for extraction:
+  [7] ai: "Perfect, thank you for confirming. Will this prope..."
+  [8] user: "personal residence ..."
+  [9] ai: "Great, for your personal residence! When are you p..."
+  [10] user: "next month..."
+
+[EXTRACT BANT] ===== STARTING AI BANT EXTRACTION =====
+[EXTRACT BANT] Analyzing last 11 messages
+[EXTRACT BANT] 🤖 Using AI extraction ONLY (no pattern detection)
+[EXTRACT BANT] 🤖 AI Extraction Results:
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: yes
+[EXTRACT BANT]   Need: personal residence
+[EXTRACT BANT]   Timeline: next month
+[EXTRACT BANT] ✅ Final Results (AI Only):
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: yes
+[EXTRACT BANT]   Need: personal residence
+[EXTRACT BANT]   Timeline: next month
+[EXTRACT BANT] ===== EXTRACTION COMPLETE =====
+
+[BANT EXTRACTION] Extraction took 1558ms
+[BANT PROMPT] Current BANT state after synchronous extraction:
+  Budget: 50M
+  Authority: yes
+  Need: personal residence
+  Timeline: next month
+[BANT EXTRACTION] BANT fields complete, extracting contact info...
+[EXTRACT CONTACT] Result: { fullName: null, mobileNumber: null, email: null }
+[BANT EXTRACTION] Contact info extracted: { fullName: null, mobileNumber: null, email: null }
+[BANT] Using FIXED QUESTIONS LOGIC for guaranteed accuracy
+
+[EXTRACT BANT] ===== STARTING AI BANT EXTRACTION =====
+[EXTRACT BANT] Analyzing last 10 messages
+[EXTRACT BANT] 🤖 Using AI extraction ONLY (no pattern detection)
+[EXTRACT BANT] 🤖 AI Extraction Results:
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: yes
+[EXTRACT BANT]   Need: personal residence
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ✅ Final Results (AI Only):
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: yes
+[EXTRACT BANT]   Need: personal residence
+[EXTRACT BANT]   Timeline: ❌ Not found
+[EXTRACT BANT] ===== EXTRACTION COMPLETE =====
+
+[BANT] Previous BANT state: {
+  budget: '50M',
+  authority: 'yes',
+  need: 'personal residence',
+  timeline: null
+}
+[BANT] Fixed response generated:
+  Acknowledgment: "Perfect, next month works! "
+  Next Question: "Excellent! To send you the best property options, may I have your name and contact number?"
+  Full Response: "Perfect, next month works! Excellent! To send you the best property options, may I have your name and contact number?"
+
+======================================================================
+🎉 CHAT REQUEST COMPLETED
+======================================================================
+[CHAT] 🎯 Final Intent: BANT
+[CHAT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[CHAT] 🤖 AI Response: "Perfect, next month works! Excellent! To send you the best property options, may I have your name and contact number?..."
+[CHAT] ⏱️ Total Processing Time: 5008ms
+[CHAT] ✅ Response sent to client
+======================================================================
+
+[ASYNC] AI message saved
+
+======================================================================
+📨 NEW CHAT REQUEST RECEIVED
+======================================================================
+[CHAT] 🕒 Timestamp: 2025-08-09T06:00:21.888Z
+[CHAT] 📧 Message: "Philippe Count, 09248123121..."
+[CHAT] 🤖 Agent ID: ec41d39f-7009-4a84-b00e-095745e17158
+[CHAT] 🌐 Source: web
+[CHAT] 👤 User ID: preview-user
+[CHAT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+======================================================================
+[TIMING] Conversation fetch/create: 246ms
+[CHAT] Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[DEBUG] Starting parallel operations for conversation cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[DEBUG] About to save message and fetch agent data...
+[DEBUG] Agent config fetched: found
+[DEBUG] Messages fetched: 12 messages
+[DEBUG] Agent fetched: found
+[DEBUG] Message saved for cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[TIMING] Parallel DB operations (save msg + fetch agent/config/messages): 730ms
+
+[MASTER INTENT] ============================================================
+[MASTER INTENT] 🧠 CONTEXT-AWARE INTENT CLASSIFICATION
+[MASTER INTENT] ============================================================
+[MASTER INTENT] 📝 User Message: "Philippe Count, 09248123121..."
+[MASTER INTENT] 📊 Context Window: 5 messages
+[MASTER INTENT] 🤖 Model: gpt-4.1-nano-2025-04-14 + Pattern Recognition
+[MASTER INTENT] 🎯 Context: AI just asked about CONTACT
+[MASTER INTENT] 🔍 Pattern Detection: BANT answer detected!
+[MASTER INTENT]   Type: contact
+[MASTER INTENT]   Confidence: 100%
+[MASTER INTENT] ✅ HIGH CONFIDENCE PATTERN MATCH: BANT
+[MASTER INTENT] 🚀 Skipping AI classification (pattern confidence: 100%)
+[MASTER INTENT] ============================================================
+
+[TIMING] Intent Classification: 0ms 
+[CHAT] Intent Classification: BANT
+
+[BANT] ============================================================
+[BANT] 🎯 PROCESSING BANT WORKFLOW
+[BANT] ============================================================
+[BANT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[BANT] 👤 User: preview-user
+[BANT] 📧 Message: "Philippe Count, 09248123121..."
+[BANT] Using system_prompt from agent_configs (intent=BANT)
+[BANT] Prompt length: 88 characters
+[BANT EXTRACTION] Starting synchronous BANT extraction...
+[BANT EXTRACTION] Starting with 13 existing messages
+[BANT EXTRACTION] Last 3 messages before adding current:
+  [0] user: "next month..."
+  [1] ai: "Perfect, next month works! Excellent! To send you ..."
+  [2] user: "Philippe Count, 09248123121..."
+[BANT EXTRACTION] Current message already included, total: 13 messages
+[BANT EXTRACTION] Final messages for extraction:
+  [9] ai: "Great, for your personal residence! When are you p..."
+  [10] user: "next month..."
+  [11] ai: "Perfect, next month works! Excellent! To send you ..."
+  [12] user: "Philippe Count, 09248123121..."
+
+[EXTRACT BANT] ===== STARTING AI BANT EXTRACTION =====
+[EXTRACT BANT] Analyzing last 13 messages
+[EXTRACT BANT] 🤖 Using AI extraction ONLY (no pattern detection)
+[EXTRACT BANT] 🤖 AI Extraction Results:
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: yes
+[EXTRACT BANT]   Need: personal residence
+[EXTRACT BANT]   Timeline: next month
+[EXTRACT BANT] ✅ Final Results (AI Only):
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: yes
+[EXTRACT BANT]   Need: personal residence
+[EXTRACT BANT]   Timeline: next month
+[EXTRACT BANT] ===== EXTRACTION COMPLETE =====
+
+[BANT EXTRACTION] Extraction took 1044ms
+[BANT PROMPT] Current BANT state after synchronous extraction:
+  Budget: 50M
+  Authority: yes
+  Need: personal residence
+  Timeline: next month
+[BANT EXTRACTION] BANT fields complete, extracting contact info...
+[EXTRACT CONTACT] Result: {
+  fullName: 'Philippe Count',
+  mobileNumber: '09248123121',
+  email: null
+}
+[BANT EXTRACTION] Contact info extracted: {
+  fullName: 'Philippe Count',
+  mobileNumber: '09248123121',
+  email: null
+}
+[NORMALIZE BANT] Raw input: {
+  budget: '50M',
+  authority: 'yes',
+  need: 'personal residence',
+  timeline: 'next month'
+}
+[NORMALIZE BANT] Normalized result: {
+  authority: 'individual',
+  need: 'residence',
+  timeline: '1-3m',
+  budget_range: 'high'
+}
+
+[LEAD] ============================================================
+[LEAD] 👥 CREATING/UPDATING LEAD
+[LEAD] 💬 Conversation: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+
+[LEAD SCORING] ===== BANT ANALYSIS =====
+[LEAD SCORING] 📊 Raw BANT Data:
+[LEAD SCORING]   Budget: ❌ Not provided
+[LEAD SCORING]   Authority: individual
+[LEAD SCORING]   Need: residence
+[LEAD SCORING]   Timeline: 1-3m
+[LEAD SCORING] ⚖️ Weights: { budget: 30, authority: 20, need: 10, timeline: 30, contact: 10 }
+[LEAD SCORING] 🤖 AI Scoring Prompt Available - Attempting AI-based scoring
+
+[AI SCORING] ===== STARTING AI-BASED BANT SCORING =====
+[AI SCORING] Raw BANT: {
+  authority: 'individual',
+  need: 'residence',
+  timeline: '1-3m',
+  budget_range: 'high'
+}
+[AI SCORING] Contact Info: Provided
+[AI SCORING] Prompt Length: 1023 characters
+[AI SCORING] 🤖 Calling OpenAI for scoring...
+[AI SCORING] ⏱️ Response received in 1346ms
+[AI SCORING] Raw AI Response: {
+  "budget_score": 0,
+  "authority_score": 20,
+  "need_score": 10,
+  "timeline_score": 15,
+  "contact_score": 10
+}
+[AI SCORING] ✅ Parsed Scores: {
+  budget_score: 0,
+  authority_score: 20,
+  need_score: 10,
+  timeline_score: 15,
+  contact_score: 10
+}
+[AI SCORING] ===== AI SCORING COMPLETE =====
+
+[LEAD SCORING] ✅ Using AI-generated scores
+[LEAD SCORING] 📈 Total Lead Score: 55.00
+[LEAD SCORING] 📊 Individual Scores: {
+  budget_score: 0,
+  authority_score: 20,
+  need_score: 10,
+  timeline_score: 15,
+  contact_score: 10
+}
+[LEAD SCORING] 🔥 Lead Classification: Warm
+[LEAD SCORING] 🎯 Scoring Method: AI-Based
+[LEAD SCORING] ===== ANALYSIS COMPLETE =====
+
+[LEAD] 🆕 New Lead CREATED
+[LEAD] 🆔 Lead ID: eb11f15b-4ad2-44c2-ab50-022306fedccb
+[LEAD] 🎯 Score: 55
+[LEAD] 🔥 Priority: Warm
+[LEAD] ============================================================
+
+[BANT EXTRACTION] Lead updated synchronously
+[BANT] Using FIXED QUESTIONS LOGIC for guaranteed accuracy
+
+[EXTRACT BANT] ===== STARTING AI BANT EXTRACTION =====
+[EXTRACT BANT] Analyzing last 12 messages
+[EXTRACT BANT] 🤖 Using AI extraction ONLY (no pattern detection)
+[EXTRACT BANT] 🤖 AI Extraction Results:
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: yes
+[EXTRACT BANT]   Need: personal residence
+[EXTRACT BANT]   Timeline: next month
+[EXTRACT BANT] ✅ Final Results (AI Only):
+[EXTRACT BANT]   Budget: 50M
+[EXTRACT BANT]   Authority: yes
+[EXTRACT BANT]   Need: personal residence
+[EXTRACT BANT]   Timeline: next month
+[EXTRACT BANT] ===== EXTRACTION COMPLETE =====
+
+[BANT] Previous BANT state: {
+  budget: '50M',
+  authority: 'yes',
+  need: 'personal residence',
+  timeline: 'next month'
+}
+[BANT] 🎯 BANT Complete! Creating lead...
+[NORMALIZE BANT] Raw input: {
+  budget: '50M',
+  authority: 'yes',
+  need: 'personal residence',
+  timeline: 'next month'
+}
+[NORMALIZE BANT] Normalized result: {
+  authority: 'individual',
+  need: 'residence',
+  timeline: '1-3m',
+  budget_range: 'high'
+}
+
+[LEAD] ============================================================
+[LEAD] 👥 CREATING/UPDATING LEAD
+[LEAD] 💬 Conversation: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+
+[LEAD SCORING] ===== BANT ANALYSIS =====
+[LEAD SCORING] 📊 Raw BANT Data:
+[LEAD SCORING]   Budget: 50M
+[LEAD SCORING]   Authority: yes
+[LEAD SCORING]   Need: personal residence
+[LEAD SCORING]   Timeline: next month
+[LEAD SCORING] ⚖️ Weights: { budget: 30, authority: 20, need: 10, timeline: 30, contact: 10 }
+[LEAD SCORING] 🤖 AI Scoring Prompt Available - Attempting AI-based scoring
+
+[AI SCORING] ===== STARTING AI-BASED BANT SCORING =====
+[AI SCORING] Raw BANT: {
+  budget: '50M',
+  authority: 'yes',
+  need: 'personal residence',
+  timeline: 'next month'
+}
+[AI SCORING] Contact Info: Provided
+[AI SCORING] Prompt Length: 1023 characters
+[AI SCORING] 🤖 Calling OpenAI for scoring...
+[AI SCORING] ⏱️ Response received in 866ms
+[AI SCORING] Raw AI Response: {
+  "budget_score": 25,
+  "authority_score": 20,
+  "need_score": 10,
+  "timeline_score": 25,
+  "contact_score": 10
+}
+[AI SCORING] ✅ Parsed Scores: {
+  budget_score: 25,
+  authority_score: 20,
+  need_score: 10,
+  timeline_score: 25,
+  contact_score: 10
+}
+[AI SCORING] ===== AI SCORING COMPLETE =====
+
+[LEAD SCORING] ✅ Using AI-generated scores
+[LEAD SCORING] 📈 Total Lead Score: 90.00
+[LEAD SCORING] 📊 Individual Scores: {
+  budget_score: 25,
+  authority_score: 20,
+  need_score: 10,
+  timeline_score: 25,
+  contact_score: 10
+}
+[LEAD SCORING] 🔥 Lead Classification: Hot
+[LEAD SCORING] 🎯 Scoring Method: AI-Based
+[LEAD SCORING] ===== ANALYSIS COMPLETE =====
+
+[LEAD] ✅ Lead UPDATED
+[LEAD] 🆔 Lead ID: eb11f15b-4ad2-44c2-ab50-022306fedccb
+[LEAD] 🎯 Score: 90
+[LEAD] 🔥 Priority: Hot
+[LEAD] ============================================================
+
+[LEAD] ✅ Lead created successfully: eb11f15b-4ad2-44c2-ab50-022306fedccb
+[LEAD] Score: 90
+[LEAD] Classification: Hot
+[BANT] Fixed response generated:
+  Acknowledgment: ""
+  Next Question: "Thank you! I have all the information I need. I'll prepare the best property options for you based on your requirements."
+  Full Response: "Thank you! I have all the information I need. I'll prepare the best property options for you based on your requirements."
+
+======================================================================
+🎉 CHAT REQUEST COMPLETED
+======================================================================
+[CHAT] 🎯 Final Intent: BANT
+[CHAT] 💬 Conversation ID: cb2a2e2d-fcb0-4a08-8be1-b6538dbd4ae6
+[CHAT] 🤖 AI Response: "Thank you! I have all the information I need. I'll prepare the best property options for you based on your requirements...."
+[CHAT] ⏱️ Total Processing Time: 12979ms
+[CHAT] ✅ Response sent to client
+======================================================================
+
+[ASYNC] AI message saved

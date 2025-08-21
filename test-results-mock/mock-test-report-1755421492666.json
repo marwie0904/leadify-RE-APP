@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-08-17T09:04:36.663Z",
+  "mode": "mock",
+  "tests": [],
+  "features": [
+    {
+      "feature": "Conversation Cost Display",
+      "status": "working",
+      "details": "4 costs shown"
+    },
+    {
+      "feature": "Member Management Actions",
+      "status": "working",
+      "details": "1 edit, 0 remove buttons"
+    },
+    {
+      "feature": "Issues & Features Sections",
+      "status": "working",
+      "details": "0 issues, 0 features in separate sections"
+    }
+  ],
+  "summary": {
+    "total": 3,
+    "working": 3,
+    "failed": 0,
+    "successRate": "100.0"
+  }
+}

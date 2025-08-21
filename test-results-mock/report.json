@@ -1,0 +1,128 @@
+{
+  "timestamp": "2025-08-17T07:20:33.796Z",
+  "results": [
+    {
+      "page": "Analytics",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/analytics",
+      "tests": [],
+      "success": false,
+      "error": "Redirected to login page"
+    },
+    {
+      "page": "Conversations",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/conversations",
+      "tests": [
+        {
+          "name": "Page Title",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h3:has-text(\"All Conversations\")') to be visible\u001b[22m\n"
+        },
+        {
+          "name": "Table",
+          "passed": true
+        },
+        {
+          "name": "Total Conversations",
+          "passed": true
+        }
+      ],
+      "success": false,
+      "successRate": 66.66666666666666
+    },
+    {
+      "page": "Leads",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/leads",
+      "tests": [
+        {
+          "name": "Page Title",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h3:has-text(\"Leads Management\")') to be visible\u001b[22m\n"
+        },
+        {
+          "name": "Table",
+          "passed": true
+        },
+        {
+          "name": "Total Leads",
+          "passed": true
+        }
+      ],
+      "success": false,
+      "successRate": 66.66666666666666
+    },
+    {
+      "page": "Members",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/members",
+      "tests": [
+        {
+          "name": "Page Title",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h3:has-text(\"Team Members\")') to be visible\u001b[22m\n"
+        },
+        {
+          "name": "Table",
+          "passed": true
+        },
+        {
+          "name": "Total Members",
+          "passed": true
+        }
+      ],
+      "success": false,
+      "successRate": 66.66666666666666
+    },
+    {
+      "page": "AI Details",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/ai-details",
+      "tests": [
+        {
+          "name": "Page Title",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h3:has-text(\"AI Agents\")') to be visible\u001b[22m\n"
+        },
+        {
+          "name": "Total AI Agents",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=\"Total AI Agents\"') to be visible\u001b[22m\n"
+        },
+        {
+          "name": "BANT Enabled",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=\"BANT Enabled\"') to be visible\u001b[22m\n"
+        }
+      ],
+      "success": false,
+      "successRate": 0
+    },
+    {
+      "page": "Issues",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/issues",
+      "tests": [
+        {
+          "name": "Page Title",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h2:has-text(\"Issues & Features\")') to be visible\u001b[22m\n"
+        },
+        {
+          "name": "Open Issues",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h3:has-text(\"Open Issues\")') to be visible\u001b[22m\n"
+        },
+        {
+          "name": "Feature Requests",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h3:has-text(\"Feature Requests\")') to be visible\u001b[22m\n"
+        }
+      ],
+      "success": false,
+      "successRate": 0
+    }
+  ],
+  "summary": {
+    "totalPages": 6,
+    "successfulPages": 0,
+    "totalTests": 15,
+    "passedTests": 6,
+    "overallSuccessRate": "40.0"
+  }
+}

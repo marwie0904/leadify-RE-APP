@@ -1,0 +1,80 @@
+{
+  "timestamp": "2025-08-19T14:32:18.649Z",
+  "summary": {
+    "totalTests": 11,
+    "totalOperations": 0,
+    "totalTokens": 0,
+    "operationTypes": {},
+    "missingOperations": {},
+    "estimatedMissingTokens": 2200
+  },
+  "detailedResults": [
+    {
+      "test": "Test 1.1: Greeting",
+      "message": "Hello, I'm looking for a property",
+      "error": "Request failed with status code 500",
+      "tracked": 0
+    },
+    {
+      "test": "Test 1.2: Budget",
+      "message": "My budget is around 25 million pesos",
+      "error": "Request failed with status code 500",
+      "tracked": 0
+    },
+    {
+      "test": "Test 1.3: Authority",
+      "message": "Yes, I'm the decision maker along with my spouse",
+      "error": "Request failed with status code 500",
+      "tracked": 0
+    },
+    {
+      "test": "Test 1.4: Need",
+      "message": "We need it for our family residence",
+      "error": "Request failed with status code 500",
+      "tracked": 0
+    },
+    {
+      "test": "Test 1.5: Timeline",
+      "message": "We're planning to buy within 3 months",
+      "error": "Request failed with status code 500",
+      "tracked": 0
+    },
+    {
+      "test": "Test 1.6: Contact Info",
+      "message": "I'm John Smith, you can reach me at 09171234567",
+      "error": "Request failed with status code 500",
+      "tracked": 0
+    },
+    {
+      "test": "Test 2.1: Estimation Request",
+      "message": "Can you help me estimate property prices?",
+      "error": "Request failed with status code 500",
+      "tracked": 0
+    },
+    {
+      "test": "Test 2.2: Property Type",
+      "message": "I want a condominium",
+      "error": "Request failed with status code 500",
+      "tracked": 0
+    },
+    {
+      "test": "Test 2.3: Payment Plan",
+      "message": "Show me the 5-year payment plan",
+      "error": "Request failed with status code 500",
+      "tracked": 0
+    },
+    {
+      "test": "Test 3.1: Amenities Question",
+      "message": "What amenities do your properties have?",
+      "error": "Request failed with status code 500",
+      "tracked": 0
+    },
+    {
+      "test": "Test 3.2: Location Question",
+      "message": "Do you have properties near Makati?",
+      "error": "Request failed with status code 500",
+      "tracked": 0
+    }
+  ],
+  "allOperations": []
+}

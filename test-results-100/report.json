@@ -1,0 +1,223 @@
+{
+  "timestamp": "2025-08-17T08:07:11.178Z",
+  "duration": 30.383,
+  "organizationId": "9a24d180-a1fe-4d22-91e2-066d55679888",
+  "results": [
+    {
+      "page": "Analytics",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/analytics",
+      "tests": [
+        {
+          "name": "Page Loaded",
+          "passed": true,
+          "selector": ".bg-white, .bg-card"
+        },
+        {
+          "name": "Overview Section",
+          "passed": true,
+          "selector": "h2:has-text(\"Analytics Overview\"), text=\"Analytics Overview\""
+        },
+        {
+          "name": "Monthly Chart",
+          "passed": true,
+          "selector": "text=\"Monthly Conversations\""
+        },
+        {
+          "name": "Token Model Chart",
+          "passed": true,
+          "selector": "text=\"Token Usage by Model\""
+        },
+        {
+          "name": "Token Task Chart",
+          "passed": true,
+          "selector": "text=\"Token Usage by Task\""
+        },
+        {
+          "name": "Total Cost Display",
+          "passed": true,
+          "selector": "text=\"Total Cost\""
+        }
+      ],
+      "success": true,
+      "loadTime": 5643,
+      "successRate": 100
+    },
+    {
+      "page": "Conversations",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/conversations",
+      "tests": [
+        {
+          "name": "Page Title",
+          "passed": true,
+          "selector": "text=\"All Conversations\", div:has-text(\"All Conversations\")"
+        },
+        {
+          "name": "Table",
+          "passed": true,
+          "selector": "table"
+        },
+        {
+          "name": "Statistics",
+          "passed": true,
+          "selector": "text=\"Total Conversations\""
+        },
+        {
+          "name": "Token Usage",
+          "passed": true,
+          "selector": "text=\"Total Tokens Used\", text=\"Token\""
+        },
+        {
+          "name": "Cost Info",
+          "passed": false,
+          "selector": "text=\"Cost\", text=\"$\""
+        }
+      ],
+      "success": true,
+      "loadTime": 3312,
+      "successRate": 80
+    },
+    {
+      "page": "Leads",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/leads",
+      "tests": [
+        {
+          "name": "Page Title",
+          "passed": true,
+          "selector": "text=\"All Leads\", div:has-text(\"All Leads\"), text=\"Lead\""
+        },
+        {
+          "name": "Table",
+          "passed": true,
+          "selector": "table"
+        },
+        {
+          "name": "Statistics",
+          "passed": true,
+          "selector": "text=\"Total Leads\""
+        },
+        {
+          "name": "Qualification Rate",
+          "passed": false,
+          "selector": "text=\"Qualification Rate\", text=\"Qualified\""
+        },
+        {
+          "name": "Score Display",
+          "passed": true,
+          "selector": "text=\"Average Score\", text=\"BANT\", text=\"Score\""
+        }
+      ],
+      "success": true,
+      "loadTime": 3253,
+      "successRate": 80
+    },
+    {
+      "page": "Members",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/members",
+      "tests": [
+        {
+          "name": "Page Title",
+          "passed": true,
+          "selector": "text=\"Organization Members\", div:has-text(\"Members\"), text=\"Member\""
+        },
+        {
+          "name": "Table",
+          "passed": true,
+          "selector": "table"
+        },
+        {
+          "name": "Statistics",
+          "passed": true,
+          "selector": "text=\"Total Members\", text=\"members\""
+        },
+        {
+          "name": "Active Count",
+          "passed": false,
+          "selector": "text=\"Active Members\", text=\"Active\""
+        },
+        {
+          "name": "Edit Controls",
+          "passed": true,
+          "selector": "button:has-text(\"Edit\"), button:has-text(\"Save\"), button"
+        }
+      ],
+      "success": true,
+      "loadTime": 3218,
+      "successRate": 80
+    },
+    {
+      "page": "AI Details",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/ai-details",
+      "tests": [
+        {
+          "name": "Page Title",
+          "passed": true,
+          "selector": "text=\"AI Agents\", div:has-text(\"AI Agent\"), text=\"Agent\""
+        },
+        {
+          "name": "Statistics",
+          "passed": true,
+          "selector": "text=\"Total AI Agents\", text=\"Active Agents\", text=\"agents\""
+        },
+        {
+          "name": "BANT Info",
+          "passed": true,
+          "selector": "text=\"BANT Enabled\", text=\"BANT\""
+        },
+        {
+          "name": "Agent Cards",
+          "passed": true,
+          "selector": ".border.rounded-lg, .card"
+        },
+        {
+          "name": "Tab Controls",
+          "passed": true,
+          "selector": "button[role=\"tab\"], button:has-text(\"General\"), button:has-text(\"BANT\"), [role=\"tablist\"]"
+        }
+      ],
+      "success": true,
+      "loadTime": 4797,
+      "successRate": 100
+    },
+    {
+      "page": "Issues",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/issues",
+      "tests": [
+        {
+          "name": "Page Header",
+          "passed": true,
+          "selector": "text=\"Issues\", div:has-text(\"Issues\")"
+        },
+        {
+          "name": "Issues Section",
+          "passed": true,
+          "selector": "text=\"Open Issues\", text=\"issue\", div:has-text(\"Issue\")"
+        },
+        {
+          "name": "Features Section",
+          "passed": true,
+          "selector": "text=\"Feature Requests\", text=\"feature\", div:has-text(\"Feature\")"
+        },
+        {
+          "name": "Issue Cards",
+          "passed": true,
+          "selector": ".border.rounded-lg, .card"
+        },
+        {
+          "name": "Priority Badges",
+          "passed": true,
+          "selector": ".bg-red-100, .bg-yellow-100, .bg-blue-100, text=\"High\", text=\"Medium\", text=\"Low\""
+        }
+      ],
+      "success": true,
+      "loadTime": 3353,
+      "successRate": 100
+    }
+  ],
+  "summary": {
+    "totalPages": 6,
+    "successfulPages": 6,
+    "totalTests": 31,
+    "passedTests": 28,
+    "overallSuccessRate": "90.3"
+  }
+}

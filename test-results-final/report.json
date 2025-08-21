@@ -1,0 +1,127 @@
+{
+  "timestamp": "2025-08-17T07:11:39.507Z",
+  "duration": 56.82,
+  "results": [
+    {
+      "page": "Analytics",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/analytics",
+      "tests": [],
+      "interactions": {},
+      "screenshot": "test-results-final/analytics-error.png",
+      "success": false,
+      "loadTime": 8948,
+      "error": "Redirected to login"
+    },
+    {
+      "page": "Conversations",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/conversations",
+      "tests": [],
+      "interactions": {},
+      "screenshot": "test-results-final/conversations-error.png",
+      "success": false,
+      "loadTime": 2303,
+      "error": "Redirected to login"
+    },
+    {
+      "page": "Leads",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/leads",
+      "tests": [],
+      "interactions": {},
+      "screenshot": "test-results-final/leads-error.png",
+      "success": false,
+      "loadTime": 6037,
+      "error": "Redirected to login"
+    },
+    {
+      "page": "Members",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/members",
+      "tests": [],
+      "interactions": {},
+      "screenshot": "test-results-final/members-error.png",
+      "success": false,
+      "loadTime": 2231,
+      "error": "Redirected to login"
+    },
+    {
+      "page": "AI Details",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/ai-details",
+      "tests": [
+        {
+          "name": "Page Title",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h3:has-text(\"AI Agents\")') to be visible\u001b[22m\n"
+        },
+        {
+          "name": "Agent Stats",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=\"Total AI Agents\"') to be visible\u001b[22m\n"
+        },
+        {
+          "name": "BANT Enabled",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=\"BANT Enabled\"') to be visible\u001b[22m\n"
+        },
+        {
+          "name": "Edit Button",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button:has-text(\"Edit\")') to be visible\u001b[22m\n"
+        },
+        {
+          "name": "Tabs",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button[role=\"tab\"]') to be visible\u001b[22m\n"
+        }
+      ],
+      "interactions": {
+        "bantConfigVisible": false
+      },
+      "screenshot": "test-results-final/ai details.png",
+      "success": false,
+      "loadTime": 2274,
+      "successRate": 0
+    },
+    {
+      "page": "Issues",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/issues",
+      "tests": [
+        {
+          "name": "Page Title",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h2:has-text(\"Issues & Features\")') to be visible\u001b[22m\n"
+        },
+        {
+          "name": "Issues Section",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h3:has-text(\"Open Issues\")') to be visible\u001b[22m\n"
+        },
+        {
+          "name": "Features Section",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h3:has-text(\"Feature Requests\")') to be visible\u001b[22m\n"
+        },
+        {
+          "name": "No Tabs",
+          "passed": true,
+          "message": "Not found (as expected)"
+        },
+        {
+          "name": "Priority Badges",
+          "passed": false,
+          "error": "page.waitForSelector: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.bg-red-100, .bg-yellow-100, .bg-blue-100') to be visible\u001b[22m\n"
+        }
+      ],
+      "interactions": {},
+      "screenshot": "test-results-final/issues.png",
+      "success": false,
+      "loadTime": 2202,
+      "successRate": 20
+    }
+  ],
+  "summary": {
+    "totalPages": 6,
+    "successfulPages": 0,
+    "totalTests": 10,
+    "passedTests": 1,
+    "overallSuccessRate": "10.0"
+  }
+}

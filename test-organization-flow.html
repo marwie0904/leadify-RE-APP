@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Setup Flow Test</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: linear-gradient(to br, #eff6ff, #dbeafe, #ffffff);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+        .step {
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #3b82f6;
+            border-radius: 8px;
+            background: #eff6ff;
+        }
+        .step h2 {
+            margin: 0 0 10px 0;
+            color: #1e40af;
+        }
+        .input-group {
+            margin: 15px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #374151;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background: #2563eb;
+        }
+        button:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+        }
+        .hidden {
+            display: none;
+        }
+        .success {
+            color: #10b981;
+            font-weight: 600;
+        }
+        .error {
+            color: #ef4444;
+            font-weight: 600;
+        }
+        .info {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            padding: 10px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏢 Organization Setup Flow Test</h1>
+        <p>This test simulates the organization setup flow including company information collection.</p>
+        
+        <!-- Step 1: Organization Name -->
+        <div id="step1" class="step">
+            <h2>Step 1 of 2: Choose Your Organization Name</h2>
+            <div class="input-group">
+                <label for="orgName">Organization Name</label>
+                <input type="text" id="orgName" placeholder="e.g., Acme Real Estate" />
+                <small style="color: #6b7280;">You'll be the admin of this organization</small>
+            </div>
+            <button onclick="goToStep2()">Next →</button>
+        </div>
+
+        <!-- Step 2: Company Information -->
+        <div id="step2" class="step hidden">
+            <h2>Step 2 of 2: Tell Us About Your Company</h2>
+            <div class="info">
+                This information will be used to train your AI Assistant to better understand and represent your business.
+            </div>
+            
+            <div class="input-group">
+                <label for="companyOverview">Company Overview *</label>
+                <textarea id="companyOverview" placeholder="Describe your company, its mission, and what makes it unique (minimum 20 characters)"></textarea>
+            </div>
+            
+            <div class="input-group">
+                <label for="industry">Industry *</label>
+                <select id="industry">
+                    <option value="">Select your industry</option>
+                    <option value="Real Estate">Real Estate</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Retail">Retail</option>
+                    <option value="Manufacturing">Manufacturing</option>
+                    <option value="Education">Education</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div class="input-group">
+                <label for="productService">Main Product/Service *</label>
+                <textarea id="productService" placeholder="Describe what you mainly sell or the primary service you provide (minimum 20 characters)"></textarea>
+            </div>
+            
+            <button onclick="goBackToStep1()">← Back</button>
+            <button onclick="submitOrganization()">Create Organization</button>
+        </div>
+
+        <!-- Success Message -->
+        <div id="success" class="step hidden">
+            <h2 class="success">✅ Organization Created Successfully!</h2>
+            <div id="orgSummary"></div>
+            <div class="info">
+                <strong>AI Context Generated:</strong>
+                <div id="aiContext"></div>
+            </div>
+        </div>
+
+        <!-- Error Message -->
+        <div id="error" class="hidden">
+            <p class="error" id="errorMsg"></p>
+        </div>
+    </div>
+
+    <script>
+        let organizationData = {
+            name: '',
+            companyOverview: '',
+            industry: '',
+            productService: ''
+        };
+
+        function goToStep2() {
+            const orgName = document.getElementById('orgName').value.trim();
+            
+            if (!orgName) {
+                showError('Please enter an organization name');
+                return;
+            }
+            
+            organizationData.name = orgName;
+            document.getElementById('step1').classList.add('hidden');
+            document.getElementById('step2').classList.remove('hidden');
+            document.getElementById('error').classList.add('hidden');
+        }
+
+        function goBackToStep1() {
+            document.getElementById('step2').classList.add('hidden');
+            document.getElementById('step1').classList.remove('hidden');
+        }
+
+        function submitOrganization() {
+            const companyOverview = document.getElementById('companyOverview').value.trim();
+            const industry = document.getElementById('industry').value;
+            const productService = document.getElementById('productService').value.trim();
+            
+            // Validation
+            if (!companyOverview || companyOverview.length < 20) {
+                showError('Please provide a more detailed company overview (at least 20 characters)');
+                return;
+            }
+            if (!industry) {
+                showError('Please select your industry');
+                return;
+            }
+            if (!productService || productService.length < 20) {
+                showError('Please provide a more detailed description of your product/service (at least 20 characters)');
+                return;
+            }
+            
+            organizationData.companyOverview = companyOverview;
+            organizationData.industry = industry;
+            organizationData.productService = productService;
+            
+            // Simulate API call
+            simulateOrganizationCreation();
+        }
+
+        function simulateOrganizationCreation() {
+            // Hide steps
+            document.getElementById('step2').classList.add('hidden');
+            document.getElementById('error').classList.add('hidden');
+            
+            // Show success
+            document.getElementById('success').classList.remove('hidden');
+            
+            // Display summary
+            const summary = `
+                <p><strong>Organization Name:</strong> ${organizationData.name}</p>
+                <p><strong>Industry:</strong> ${organizationData.industry}</p>
+                <p><strong>Company Overview:</strong> ${organizationData.companyOverview}</p>
+                <p><strong>Product/Service:</strong> ${organizationData.productService}</p>
+            `;
+            document.getElementById('orgSummary').innerHTML = summary;
+            
+            // Simulate AI context generation (max 50 tokens)
+            const aiContext = generateAIContext();
+            document.getElementById('aiContext').innerHTML = `<pre>${aiContext}</pre>`;
+        }
+
+        function generateAIContext() {
+            // Simulate what would be sent to the AI
+            const fullContext = `Company: ${organizationData.name}, Industry: ${organizationData.industry}, Overview: ${organizationData.companyOverview}`;
+            
+            // Simulate token limit (roughly 50 tokens = ~200 characters)
+            if (fullContext.length > 200) {
+                return fullContext.substring(0, 197) + '...';
+            }
+            return fullContext;
+        }
+
+        function showError(message) {
+            document.getElementById('errorMsg').textContent = message;
+            document.getElementById('error').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

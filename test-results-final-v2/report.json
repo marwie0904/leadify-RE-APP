@@ -1,0 +1,167 @@
+{
+  "timestamp": "2025-08-17T07:48:19.751Z",
+  "duration": 62.133,
+  "organizationId": "9a24d180-a1fe-4d22-91e2-066d55679888",
+  "results": [
+    {
+      "page": "Analytics",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/analytics",
+      "tests": [],
+      "success": false,
+      "loadTime": 3251,
+      "error": "Redirected to login page"
+    },
+    {
+      "page": "Conversations",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/conversations",
+      "tests": [
+        {
+          "name": "Page Title",
+          "passed": false
+        },
+        {
+          "name": "Table",
+          "passed": true
+        },
+        {
+          "name": "Statistics",
+          "passed": true
+        },
+        {
+          "name": "Token Usage",
+          "passed": true
+        },
+        {
+          "name": "Cost Info",
+          "passed": false
+        }
+      ],
+      "success": false,
+      "loadTime": 3238,
+      "successRate": 60
+    },
+    {
+      "page": "Leads",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/leads",
+      "tests": [
+        {
+          "name": "Page Title",
+          "passed": false
+        },
+        {
+          "name": "Table",
+          "passed": true
+        },
+        {
+          "name": "Statistics",
+          "passed": true
+        },
+        {
+          "name": "Qualification Rate",
+          "passed": true
+        },
+        {
+          "name": "Score Display",
+          "passed": true
+        }
+      ],
+      "success": true,
+      "loadTime": 3262,
+      "successRate": 80
+    },
+    {
+      "page": "Members",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/members",
+      "tests": [
+        {
+          "name": "Page Title",
+          "passed": false
+        },
+        {
+          "name": "Table",
+          "passed": true
+        },
+        {
+          "name": "Statistics",
+          "passed": true
+        },
+        {
+          "name": "Active Count",
+          "passed": true
+        },
+        {
+          "name": "Edit Controls",
+          "passed": true
+        }
+      ],
+      "success": true,
+      "loadTime": 3200,
+      "successRate": 80
+    },
+    {
+      "page": "AI Details",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/ai-details",
+      "tests": [
+        {
+          "name": "Page Title",
+          "passed": false
+        },
+        {
+          "name": "Statistics",
+          "passed": true
+        },
+        {
+          "name": "BANT Info",
+          "passed": true
+        },
+        {
+          "name": "Agent Cards",
+          "passed": true
+        },
+        {
+          "name": "Tab Controls",
+          "passed": true
+        }
+      ],
+      "success": true,
+      "loadTime": 3208,
+      "successRate": 80
+    },
+    {
+      "page": "Issues",
+      "url": "http://localhost:3000/admin/organizations/9a24d180-a1fe-4d22-91e2-066d55679888/issues",
+      "tests": [
+        {
+          "name": "Page Header",
+          "passed": false
+        },
+        {
+          "name": "Issues Section",
+          "passed": true
+        },
+        {
+          "name": "Features Section",
+          "passed": false
+        },
+        {
+          "name": "Issue Cards",
+          "passed": true
+        },
+        {
+          "name": "Priority Badges",
+          "passed": true
+        }
+      ],
+      "success": false,
+      "loadTime": 3205,
+      "successRate": 60
+    }
+  ],
+  "summary": {
+    "totalPages": 6,
+    "successfulPages": 3,
+    "totalTests": 25,
+    "passedTests": 18,
+    "overallSuccessRate": "72.0"
+  }
+}

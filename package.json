@@ -1,8 +1,38 @@
 {
+  "name": "real-estate-test-data",
+  "version": "1.0.0",
+  "description": "Test data generation and simulation for Real Estate AI Agent Web App",
+  "scripts": {
+    "test-data:clean": "node clean-test-data.js",
+    "test-data:users": "node create-users-orgs.js",
+    "test-data:agents": "node create-agents.js",
+    "test-data:issues": "node create-issues-features.js",
+    "test-data:simulate": "node simulate-conversations.js",
+    "test-data:simulate:headless": "node simulate-conversations.js headless",
+    "test-data:verify": "node verify-all-data.js",
+    "test-data:generate": "node run-complete-test-data-generation.js",
+    "test-data:generate:fast": "node run-complete-test-data-generation.js --headless",
+    "test-data:generate:no-sim": "node run-complete-test-data-generation.js --skip-simulation",
+    "test:frontend": "node run-complete-frontend-test.js",
+    "test:frontend:auto": "node run-complete-frontend-test.js --auto",
+    "test:frontend:full": "node test-frontend-simulation-complete-v2.js",
+    "test:sample": "node test-sample-ui-validation.js",
+    "test:verify": "node verify-frontend-display.js",
+    "test:quick": "node test-frontend-with-playwright.js",
+    "test:complete": "npm run test:frontend:auto && npm run test:verify"
+  },
   "dependencies": {
-    "@supabase/supabase-js": "^2.53.0",
+    "axios": "^1.11.0",
+    "bcryptjs": "^2.4.3",
     "dotenv": "^17.2.1",
+    "jsonwebtoken": "^9.0.2",
     "node-fetch": "^2.7.0",
-    "playwright": "^1.54.2"
+    "openai": "^5.12.2",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@supabase/supabase-js": "^2.55.0",
+    "playwright": "^1.54.2",
+    "puppeteer": "^24.16.2"
   }
 }

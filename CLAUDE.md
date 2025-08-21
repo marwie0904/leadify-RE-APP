@@ -11,7 +11,7 @@ This is a Real Estate AI Agent Web Application with a sophisticated backend API 
 **Monorepo Structure:**
 - `BACKEND/` - Express.js API server with Domain-Driven Design (DDD) architecture
 - `FRONTEND/` - Multiple Next.js frontend implementations
-  - `financial-dashboard-2/` - Primary production frontend (Next.js 15)
+  - `frontend-application/` - Primary production frontend (Next.js 15)
   - `api-agent[1-6]/` - Various agent-specific frontend implementations
   - `frontend-agent[1-6]/` - Alternative frontend variations
   - `frontend-arch-agent[1-3]/` - Architecture-focused implementations
@@ -22,6 +22,18 @@ This is a Real Estate AI Agent Web Application with a sophisticated backend API 
 - **Database**: Supabase (PostgreSQL) with Row Level Security (RLS)
 - **Authentication**: Supabase Auth with JWT tokens
 - **Integration**: Facebook Messenger webhooks, OpenAI embeddings
+
+## Database Operations
+
+**IMPORTANT**: Always use the Supabase MCP (Model Context Protocol) for database operations:
+- **Project ID**: `kbmsygyawpiqegemzetp` (real-estate project)
+- **Use MCP for**: Running SQL queries, migrations, table operations, data manipulation
+- **MCP Functions**: 
+  - `mcp__supabase__execute_sql` - For all SQL operations
+  - `mcp__supabase__list_tables` - To list database tables
+  - Other Supabase MCP functions as needed
+- **Never use**: Direct database scripts or manual SQL execution
+- **Benefits**: Direct database access, immediate execution, no connection issues
 
 ## Development Commands
 
@@ -57,9 +69,9 @@ npm run migrate             # Run database migrations
 npm run migrate:status      # Check migration status
 ```
 
-**Frontend Development (from FRONTEND/financial-dashboard-2/ directory):**
+**Frontend Development (from FRONTEND/frontend-application/ directory):**
 ```bash
-cd FRONTEND/financial-dashboard-2
+cd FRONTEND/frontend-application
 npm run dev                 # Start Next.js dev server on port 3000
 npm run build               # Build for production
 npm run start               # Start production server
@@ -94,7 +106,7 @@ npm run server              # Start Express server (proxy to backend)
 
 ### Frontend Architecture
 
-**Primary Frontend** (`financial-dashboard-2/`):
+**Primary Frontend** (`frontend-application/`):
 - **Framework**: Next.js 15 with App Router
 - **State Management**: React Context (AuthProvider, SettingsProvider) + Zustand
 - **UI Components**: shadcn/ui with Radix UI primitives
